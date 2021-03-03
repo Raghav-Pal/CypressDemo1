@@ -1,0 +1,239 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 4,
+    "failures": -4,
+    "start": "2021-03-02T03:26:02.503Z",
+    "end": "2021-03-02T03:26:03.197Z",
+    "duration": 694,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 4,
+    "hasOther": true,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "c790fab0-5a2a-4937-98f5-29efa1d72fdf",
+      "title": "",
+      "fullFile": "cypress\\integration\\API\\api_test_1.spec.ts",
+      "file": "cypress\\integration\\API\\api_test_1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+          "title": "API Testing with Cypress",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET ",
+              "fullTitle": "API Testing with Cypress GET ",
+              "timedOut": null,
+              "duration": 117,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('GET', 'users?page=2')\n    .then(function (response) {\n    expect(response).to.have.property('status', 200);\n    expect(response.status).to.eq(200);\n    expect(response.body).not.to.be.null;\n    expect(response.body).to.have.property('page', 2);\n    expect(response.body.data).to.have.length(6);\n});",
+              "err": {},
+              "uuid": "e5b1cf37-ce70-47df-8b09-100f4e4a6f11",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET 2 ",
+              "fullTitle": "API Testing with Cypress GET 2 ",
+              "timedOut": null,
+              "duration": 41,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "console.log(Cypress.browser);\ncy.request({\n    method: 'GET',\n    url: 'users?page=2'\n}).then(function (response) {\n    expect(response).to.have.property('status', 200);\n    expect(response.status).to.eq(200);\n    expect(response.body).not.to.be.null;\n    expect(response.body).to.have.property('page', 2);\n    expect(response.body.data).to.have.length(6);\n});",
+              "err": {},
+              "uuid": "25d19592-f470-4128-8f54-8de8c4c83cbe",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST 4",
+              "fullTitle": "API Testing with Cypress POST 4",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "11bce727-1f2d-4fbd-8368-1cb8de301dae",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST",
+              "fullTitle": "API Testing with Cypress POST",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "0696a5d7-233a-4749-8996-0f1860af8913",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST 2",
+              "fullTitle": "API Testing with Cypress POST 2",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "92e0f3d6-9d39-40ce-8b8a-5aa7b3c71264",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST 3",
+              "fullTitle": "API Testing with Cypress POST 3",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "f910510f-5291-4a87-a602-88bd8e7b1f1e",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PUT",
+              "fullTitle": "API Testing with Cypress PUT",
+              "timedOut": null,
+              "duration": 245,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n    method: 'PUT',\n    url: 'users/2',\n    body: {\n        \"name\": \"Raghav\",\n        \"job\": \"Teacher\"\n    }\n}).then(function (response) {\n    expect(response.body).has.property(\"job\", \"Teacher\");\n    expect(response.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "02a1801a-546b-4550-a214-b9b68f4753f1",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "DELETE",
+              "fullTitle": "API Testing with Cypress DELETE",
+              "timedOut": null,
+              "duration": 247,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n    method: \"DELETE\",\n    url: \"users/2\"\n}).then(function (response) {\n    expect(response.body).to.be.empty;\n    expect(response.status).to.eq(204);\n});",
+              "err": {},
+              "uuid": "7500c2d8-a6bb-436e-8f4a-05506cc869ba",
+              "parentUUID": "098557a8-9dc7-4ea9-8f76-d6420a3a865c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e5b1cf37-ce70-47df-8b09-100f4e4a6f11",
+            "25d19592-f470-4128-8f54-8de8c4c83cbe",
+            "02a1801a-546b-4550-a214-b9b68f4753f1",
+            "7500c2d8-a6bb-436e-8f4a-05506cc869ba"
+          ],
+          "failures": [],
+          "pending": [
+            "11bce727-1f2d-4fbd-8368-1cb8de301dae",
+            "0696a5d7-233a-4749-8996-0f1860af8913",
+            "92e0f3d6-9d39-40ce-8b8a-5aa7b3c71264",
+            "f910510f-5291-4a87-a602-88bd8e7b1f1e"
+          ],
+          "skipped": [],
+          "duration": 650,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

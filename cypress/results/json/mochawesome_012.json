@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-02-28T17:09:44.840Z",
+    "end": "2021-02-28T17:09:52.513Z",
+    "duration": 7673,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "37927371-8f88-400c-98ca-09a79b21d24b",
+      "title": "",
+      "fullFile": "cypress\\integration\\basic.ts",
+      "file": "cypress\\integration\\basic.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "google test",
+          "fullTitle": "google test",
+          "timedOut": null,
+          "duration": 5644,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\basic.ts\\\\google test (failed).png\"\n}",
+          "code": "cy.visit('https://google.com');\ncy.get('[name=\"a\"]')\n    .type('Raghav Pal')\n    .type('{enter}');",
+          "err": {
+            "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[name=\"a\"]`, but never found it.",
+            "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[name=\"a\"]`, but never found it.\n    at Context.eval (https://www.google.com/__cypress/tests?p=cypress\\integration\\basic.ts:101:8)",
+            "diff": null
+          },
+          "uuid": "44ea5ecd-e6f6-4900-9a9d-5b85732c1497",
+          "parentUUID": "37927371-8f88-400c-98ca-09a79b21d24b",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "44ea5ecd-e6f6-4900-9a9d-5b85732c1497"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 5644,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

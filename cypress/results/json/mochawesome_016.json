@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-28T17:13:27.833Z",
+    "end": "2021-02-28T17:13:31.912Z",
+    "duration": 4079,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7f7a7be6-615d-48be-88a2-c5d84b283602",
+      "title": "",
+      "fullFile": "cypress\\integration\\fileupload.ts",
+      "file": "cypress\\integration\\fileupload.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e9310f5-f768-4848-92a3-a4a080724278",
+          "title": "file upload test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "upload file",
+              "fullTitle": "file upload test upload file",
+              "timedOut": null,
+              "duration": 1416,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://filebin.net/');\ncy.get('[id=\"fileField\"]').attachFile('photo.png');",
+              "err": {},
+              "uuid": "489e1979-a104-427e-9bad-43f69c654394",
+              "parentUUID": "0e9310f5-f768-4848-92a3-a4a080724278",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "downlaod file",
+              "fullTitle": "file upload test downlaod file",
+              "timedOut": null,
+              "duration": 103,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.downloadFile('https://upload.wikimedia.org/wikipedia/en/a/a9/Example.jpg', 'mydownloads', 'photo123.png');",
+              "err": {},
+              "uuid": "a5a6e821-6b8e-47f6-a284-8262f6845369",
+              "parentUUID": "0e9310f5-f768-4848-92a3-a4a080724278",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "489e1979-a104-427e-9bad-43f69c654394",
+            "a5a6e821-6b8e-47f6-a284-8262f6845369"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1519,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "projectId": "i6o6ie",
+    "reporter" : "cypress-mochawesome-reporter",
+    "watchForFileChanges" : false,
+    "integrationFolder" : "cypress/integration",
+    "pluginsFile" : "cypress/plugins/index.js",
+    "testFiles" : "**/*.*",
+    "experimentalStudio": true
+}

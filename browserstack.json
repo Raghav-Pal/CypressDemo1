@@ -1,0 +1,22 @@
+{
+    "auth": {
+        "username": "raghavpal2",
+        "access_key": "QqEJyE8fXqyzJwYR1vxc"
+    },
+    "browsers": [
+        {
+            "browser": "chrome",
+            "os": "Windows 10",
+            "versions": [
+                "latest",
+                "latest-1"
+            ]
+         }
+    ],
+    "run_settings": {
+        "cypress_config_file": "./cypress.json",
+        "cypress_version": "6",
+        "project_name": "My project",
+        "parallels": "5"
+    }
+}

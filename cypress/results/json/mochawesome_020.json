@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-03-01T10:25:55.611Z",
+    "end": "2021-03-01T10:25:56.936Z",
+    "duration": 1325,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cc12dec3-60f6-4c14-a7f1-4e348ffce4aa",
+      "title": "",
+      "fullFile": "cypress\\integration\\fileuploaddownload.spec.js",
+      "file": "cypress\\integration\\fileuploaddownload.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b957f968-1aa9-4ac1-99e9-fc1945ad3655",
+          "title": "file upload test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "upload file",
+              "fullTitle": "file upload test upload file",
+              "timedOut": null,
+              "duration": 501,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\fileuploaddownload.spec.js\\\\file upload test -- upload file (failed).png\"\n}",
+              "code": "cy.visit('https://filebin.net/'); // cySubject.attachFile(fixture, optionalProcessingConfig);\ncy.get('[id=\"fileField\"]').attachFile('photo.png');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://filebin.net/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://filebin.net/\n\nThe response we received from your web server was:\n\n  > 503: Service Unavailable\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://localhost:62183/__cypress/runner/cypress_runner.js:159060:25\n    at visitFailedByErr (http://localhost:62183/__cypress/runner/cypress_runner.js:158436:12)\n    at http://localhost:62183/__cypress/runner/cypress_runner.js:159040:13\n    at tryCatcher (http://localhost:62183/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (http://localhost:62183/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (http://localhost:62183/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (http://localhost:62183/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (http://localhost:62183/__cypress/runner/cypress_runner.js:8878:18)\n    at _drainQueueStep (http://localhost:62183/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (http://localhost:62183/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:62183/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (http://localhost:62183/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:62183/__cypress/tests?p=cypress\\integration\\fileuploaddownload.spec.js:101:8)",
+                "diff": null
+              },
+              "uuid": "e45afb43-58cf-4aee-8fe8-a27ba370af9d",
+              "parentUUID": "b957f968-1aa9-4ac1-99e9-fc1945ad3655",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "downlaod file",
+              "fullTitle": "file upload test downlaod file",
+              "timedOut": null,
+              "duration": 737,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\fileuploaddownload.spec.js\\\\file upload test -- downlaod file (failed).png\"\n}",
+              "code": "cy.downloadFile('https://filebin.net/2y2rg9wen7vkwxd6/PhotoWithNoBackground.png?t=eyxuyfxq', 'fixtures', 'photo123.png');",
+              "err": {
+                "message": "CypressError: `cy.task('downloadFile')` failed with the following error:\n\n> request to https://filebin.net/2y2rg9wen7vkwxd6/PhotoWithNoBackground.png?t=eyxuyfxq failed, reason: socket hang up",
+                "estack": "CypressError: `cy.task('downloadFile')` failed with the following error:\n\n> request to https://filebin.net/2y2rg9wen7vkwxd6/PhotoWithNoBackground.png?t=eyxuyfxq failed, reason: socket hang up\n    at http://localhost:62183/__cypress/runner/cypress_runner.js:160936:19\n    at tryCatcher (http://localhost:62183/__cypress/runner/cypress_runner.js:10765:23)\n    at Promise._settlePromiseFromHandler (http://localhost:62183/__cypress/runner/cypress_runner.js:8700:31)\n    at Promise._settlePromise (http://localhost:62183/__cypress/runner/cypress_runner.js:8757:18)\n    at Promise._settlePromise0 (http://localhost:62183/__cypress/runner/cypress_runner.js:8802:10)\n    at Promise._settlePromises (http://localhost:62183/__cypress/runner/cypress_runner.js:8878:18)\n    at _drainQueueStep (http://localhost:62183/__cypress/runner/cypress_runner.js:5472:12)\n    at _drainQueue (http://localhost:62183/__cypress/runner/cypress_runner.js:5465:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:62183/__cypress/runner/cypress_runner.js:5481:5)\n    at Async.drainQueues (http://localhost:62183/__cypress/runner/cypress_runner.js:5351:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:62183/__cypress/tests?p=cypress\\support\\index.js:1985:15)\n\nFrom Node.js Internals:\n  FetchError: request to https://filebin.net/2y2rg9wen7vkwxd6/PhotoWithNoBackground.png?t=eyxuyfxq failed, reason: socket hang up\n      at ClientRequest.<anonymous> (D:\\Projects\\Cypress\\Project6_TS\\node_modules\\node-fetch\\lib\\index.js:1461:11)\n      at ClientRequest.emit (events.js:315:20)\n      at TLSSocket.socketOnEnd (_http_client.js:453:9)\n      at TLSSocket.emit (events.js:327:22)\n      at endReadableNT (_stream_readable.js:1220:12)\n      at processTicksAndRejections (internal/process/task_queues.js:84:21)",
+                "diff": null
+              },
+              "uuid": "b15ca613-343f-4fa6-bd1d-ca165f7433ae",
+              "parentUUID": "b957f968-1aa9-4ac1-99e9-fc1945ad3655",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "e45afb43-58cf-4aee-8fe8-a27ba370af9d",
+            "b15ca613-343f-4fa6-bd1d-ca165f7433ae"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1238,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

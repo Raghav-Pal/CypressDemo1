@@ -1,0 +1,27 @@
+{
+   "lambdatest_auth": {
+      "username": "raghav9901",
+      "access_key": "DQRJYx6tfyUdzDmNqHvNoyg5D91YCpF4qGdtOFGBGzjBDaMvwh"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "88.0"
+         ]
+      }
+   ],
+   "run_settings": {
+      "cypress_config_file": "./cypress.json",
+      "cypress_version": "6",
+      "project_name": "LambdaTest Cypress Demo",
+      "build_name": "Cypress Testing 1",
+      "parallels": "2",
+      "specs": "**/*.*"
+   },
+   "tunnel_settings": {
+      "tunnel": false,
+      "tunnelName": null
+   }
+}

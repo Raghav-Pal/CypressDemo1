@@ -1,0 +1,32 @@
+{
+  "name": "Project6_TS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rimraf cypress/results/json/*.json",
+    "test": "cypress run",
+    "posttest": "generate-mochawesome-report",
+    "echo": "echo Hello World",
+    "make": "mkdir .\\cypress\\reports\\json",
+    "clear": "rmdir \"./cypress/reports/\"",
+    "clean-reports": "rd -r .\\cypress\\reports\\ && mkdir .\\cypress\\reports\\json",
+    "script": "cypress run",
+    "merge-report": "mochawesome-merge --reportDir cypress/reports/json > cypress/reports/mochawesome-bundle.json",
+    "generate-html-report": "marge cypress/reports/mochawesome-bundle.json -o cypress/reports"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserstack-cypress-cli": "^1.7.1",
+    "cypress": "^6.5.0",
+    "cypress-downloadfile": "^1.2.0",
+    "typescript": "^4.2.2"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.2",
+    "cypress-mochawesome-reporter": "^1.3.0",
+    "rimraf": "^3.0.2"
+  }
+}
